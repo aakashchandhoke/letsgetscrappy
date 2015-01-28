@@ -1,0 +1,112 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+        <title>Contact Us</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="/static/js/jquery.min.js"></script>
+		<script src="/static/js/jquery.poptrox.min.js"></script>
+		<script src="/static/js/jquery.scrolly.min.js"></script>
+		<script src="/static/js/jquery.scrollgress.min.js"></script>
+		<script src="/static/js/skel.min.js"></script>
+		<script src="/static/js/init.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link  href="/static/css/skel.css" rel="stylesheet" >
+    <link  href="/static/css/style.css" rel="stylesheet">
+    <link  href="/static/css/style-wide.css" rel="stylesheet">
+    <link  href="/static/css/style-normal.css" rel="stylesheet">
+    <style>
+      .form-control,.form-control:focus,.btn{
+        border-radius:10px;
+        box-shadow:none;
+      }
+      label{
+        font-weight:300;
+          color: white;
+      }
+        #forum{
+            font-family: 'Chewy', cursive;
+            font-size: 50px;
+            margin-top: 15px;
+            color: rgb(252, 239, 7);
+        }
+      .mainContainer{
+        /*background-color: #fff;*/
+        /*box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.3);*/
+        margin:auto;
+        margin-top:6%;
+          margin-left: 4px;
+        padding-left: 20px;
+        max-width:450px;
+        width:100%;
+        border-radius:2px;
+      }
+      .mainContainer h1{
+        font-size:2em;
+        margin-top:0;
+      }
+      .btn{
+        background:#34495E;
+        border:0;
+        display:block;
+        width:100%;
+        max-width:200px;
+        margin:auto;
+      }
+        #ass{
+                    background: url('/static/css/images/overlay.png'),url('/static/images/form.png');
+        }
+        #max{
+            background: none;
+        }
+            
+    </style>
+  </head>
+  <body id="aff">
+			<header id="header" class="is-loading" style="opacity: 1;">
+					<h1 id="logo"><a href="/">Shivani's Creation</a></h1>
+			</header>
+    <section class="container-fluid" id="ass">
+        <h1 id="forum">Contact us to Order</h1>
+      <div class="mainContainer">
+        <form role="form" method="post" action="">
+          <div class="form-group">
+            <label class="control-label" for="name">Name</label>
+            <input id="username" name="username" type="text" placeholder="Enter your Name" class="form-control input-md" style="height:3em;" required>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="email">Your Email Id</label>  
+            <input id="email" name="email" type="text" placeholder="Enter email-id" class="form-control input-md" style="height:3em;"required>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="phonenumber">Phone number</label>
+            <input id="password" name="password" type="text" placeholder="Enter phone number" style="height:3em;" class="form-control input-md" required>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="product">Product</label>
+            <select>
+                <option value="">Select</option>
+  <option value="Scrapbook">Scrapbook</option>
+  <option value="Calendar">Calendar</option>
+  <option value="Greeting cards">Greeting cards</option>
+  <option value="Poster collage">Poster collage</option>
+</select>
+          </div>
+            <div class="form-group">
+            <label class="control-label" for="quantity">Quantity</label>
+            <input id="repeatpassword" name="repeatpassword" type="text" placeholder="Enter quantity" class="form-control input-md" style="height:3em;" required>
+          </div>
+            <div class="form-group">
+            <label class="control-label" for="quantity" >Comments</label>
+                <textarea id="max" name="repeatpassword" type="text" placeholder="Enter comments" row="4" cols="50" class="form-control input-md" required></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" id="submitBtn" name="submitBtn" class="btn btn-primary" value="Submit">
+          </div>
+        </form> 
+      </div>
+    </section>
+  </body>
+  </html>
