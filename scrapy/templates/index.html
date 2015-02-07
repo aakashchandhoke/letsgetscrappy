@@ -161,16 +161,16 @@ function normalImg(x) {
                     
 				</div>
                 <a href="#contact" class="button style2 down anchored">Next</a>
-			</section>
+			</section>	
          <!-- Contact -->
 			<section id="contact" class="main style3 secondary">
-				<div class="content container">
+				<div class="content container" align='center' id="asa">
 					<header>
-						<h2>Hey there!!</h2>
-						<p>Send us your valuable feedback!!</p>
+						<h2 id="a1">Hey there!!</h2>
+						<p id="a2">Send us your valuable feedback!!</p>
 					</header>
-					<div class="box container small">
-							<form method="post" action="" method="post">
+					<div class="box container small" id="aa">
+							<form method="GET" role="form">
 							{% csrf_token %}
 								<div class="row half">
 									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
@@ -182,7 +182,7 @@ function normalImg(x) {
 								<div class="row">
 									<div class="12u">
 										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="button" value="Send Message" onclick="contactformsub();" /></li>
 										</ul>
 									</div>
 								</div>
@@ -190,7 +190,22 @@ function normalImg(x) {
 
 					</div>
 				</div>
-			</section>		
+			</section>
+						<script type="text/javascript">
+			function contactformsub() {
+    var elem = document.getElementById('aa');
+    var elem1 = document.getElementById('a1');
+    var elem2 = document.getElementById('a2');
+    elem.parentNode.removeChild(elem);
+    elem1.parentNode.removeChild(elem1);
+    elem2.parentNode.removeChild(elem2);
+    var x = document.createElement("P");
+    var t = document.createTextNode("THANKS FOR CONTACTING US");
+     x.appendChild(t);
+         document.getElementById('asa').appendChild(x);
+    }
+
+			</script>
 			<footer id="footer">
 					<ul class="menu">
 						<li>Design & Developed by: Aakash chandhoke </li>

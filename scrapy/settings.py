@@ -79,11 +79,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_ROOT = 'staticfiles'
-STATIC_URL = '/static/'
+STATIC_ROOT = 'static'
+STATIC_URL = '/css/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'css'),
 )
 
 
@@ -94,12 +94,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
-STATICFILES_DIRS = (
-                os.path.join( PROJECT_ROOT, 'static'),
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-)
+
 
 
 EMAIL_USE_TLS = True

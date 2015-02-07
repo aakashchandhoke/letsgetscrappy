@@ -56,7 +56,7 @@
         margin:auto;
       }
         #ass{
-                    background: url('/static/css/images/overlay.png'),url('/static/images/form.png');
+                    background: url('/static/css/images/overlay.png'),url('/static/images/f1.jpg');
         }
         #max{
             background: none;
@@ -70,37 +70,38 @@
 			</header>
     <section class="container-fluid" id="ass">
         <h1 id="forum">Contact us to Order</h1>
-      <div class="mainContainer">
-        <form role="form" method="post" action="">
-          <div class="form-group">
+      <div class="mainContainer" id="asa">
+        <form role="form" method="post" action="/thankyou" enctype="multipart/form-data"s>
+        {% csrf_token %}
+          <div class="form-group" id="aa">
             <label class="control-label" for="name">Name</label>
-            <input id="username" name="username" type="text" placeholder="Enter your Name" class="form-control input-md" style="height:3em;" required>
+            <input id="username" name="name" type="text" placeholder="Enter your Name" class="form-control input-md" style="height:3em; color:white" required>
           </div>
           <div class="form-group">
             <label class="control-label" for="email">Your Email Id</label>  
-            <input id="email" name="email" type="text" placeholder="Enter email-id" class="form-control input-md" style="height:3em;"required>
+            <input id="email" name="email" type="text" placeholder="Enter email-id" class="form-control input-md" style="height:3em; color:white"required>
           </div>
           <div class="form-group">
             <label class="control-label" for="phonenumber">Phone number</label>
-            <input id="password" name="password" type="text" placeholder="Enter phone number" style="height:3em;" class="form-control input-md" required>
+            <input id="phno" name="phno" type="text" placeholder="Enter phone number" style="height:3em; color:white" class="form-control input-md" required>
           </div>
           <div class="form-group">
             <label class="control-label" for="product">Product</label>
-            <select>
+            <select name="selectone" >
                 <option value="">Select</option>
-  <option value="Scrapbook">Scrapbook</option>
-  <option value="Calendar">Calendar</option>
-  <option value="Greeting cards">Greeting cards</option>
-  <option value="Poster collage">Poster collage</option>
-</select>
+                <option value="Scrapbook">Scrapbook</option>
+                <option value="Calendar">Calendar</option>
+                <option value="Greeting cards">Greeting cards</option>
+                <option value="Poster collage">Poster collage</option>
+            </select>
           </div>
             <div class="form-group">
-            <label class="control-label" for="quantity">Quantity</label>
-            <input id="repeatpassword" name="repeatpassword" type="text" placeholder="Enter quantity" class="form-control input-md" style="height:3em;" required>
+            <label class="control-label" for="quantity" style="color:white">Quantity</label>
+            <input id="quantity" name="quantity" type="text" placeholder="Enter quantity" class="form-control input-md" style="height:3em;" required>
           </div>
             <div class="form-group">
-            <label class="control-label" for="quantity" >Comments</label>
-                <textarea id="max" name="repeatpassword" type="text" placeholder="Enter comments" row="4" cols="50" class="form-control input-md" required></textarea>
+            <label class="control-label" for="quantity" style="color:white">Comments</label>
+                <textarea id="max" name="comment" type="text" placeholder="Enter comments" row="4" cols="50" class="form-control input-md" required></textarea>
           </div>
           <div class="form-group">
             <input type="submit" id="submitBtn" name="submitBtn" class="btn btn-primary" value="Submit">

@@ -26,7 +26,7 @@ urlpatterns = patterns('',
     url(r'faq', 'scrapy.views.faq', name='faq'),
     url(r'about', 'scrapy.views.about', name='about'),
     url(r'form', 'scrapy.views.form', name='form'),
-    
+    url(r'thankyou', 'scrapy.views.thankyou', name='thankyou'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
