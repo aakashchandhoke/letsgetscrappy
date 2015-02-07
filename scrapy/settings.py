@@ -94,8 +94,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
-
-
+# print a
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
