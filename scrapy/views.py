@@ -19,10 +19,10 @@ import random,string
 
 def home(request):
 	""" View for the home page"""
-	if request.POST:
-		name = request.POST['name']
-		message = request.POST['message']
-		email = request.POST['email']
+	if request.is_ajax():
+		name = request.GET.get('name')
+		message = request.GET.get('message')
+		email = request.GET.get('email')
 		send_mail(email, name+ "\n" + message,"scrappy0089@gmail.com","scrappy0089@gmail.com".split(' '), fail_silently=False)
 	return render_to_response('index.html',context_instance=RequestContext(request))
 
