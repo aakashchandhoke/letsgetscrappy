@@ -282,6 +282,7 @@
 			form input[type="email"],
 			form input[type="password"],
 			form select,
+			#name,#email,#message,
 			form textarea {
 				display: block;
 				width: 100%;
