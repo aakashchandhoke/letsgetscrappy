@@ -100,8 +100,8 @@ TEMPLATE_DIRS = (
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'scrappy0089@gmail.com'
-EMAIL_HOST_PASSWORD = '05322642402'
+EMAIL_HOST_USER = 'desh.py@gmail.com'
+EMAIL_HOST_PASSWORD = 'dineshsumitra'
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 
 TEMPLATE_CONTEXT_PROCESSORS = (
