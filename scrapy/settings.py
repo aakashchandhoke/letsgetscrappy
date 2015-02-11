@@ -90,7 +90,7 @@ STATICFILES_DIRS = (
 
 TEMPLATE_DIRS = (
     os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(__file__))), \
-        'scrapy/templates')
+        'scrapy/templates'),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -101,7 +101,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'desh.py@gmail.com'
-EMAIL_HOST_PASSWORD = 'dineshsumitra'
+EMAIL_HOST_PASSWORD = 'lolllllzzzzzzzz'
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 
 TEMPLATE_CONTEXT_PROCESSORS = (
